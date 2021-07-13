@@ -1,0 +1,24 @@
+runtime:
+  cache_dir: ./.cache/antora
+
+site:
+  url: http://localhost:3000
+  start_page: solo-build-course::index.adoc
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_path: documentation
+asciidoc:
+  extensions:
+    - ./lib/remote-include-processor.js
+    - ./lib/tab-block.js
+ui:
+  bundle:
+    url: https://github.com/kameshsampath/solo-demo-docs-ui/releases/download/v0.1.5/ui-bundle.zip
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+
+output:
+  dir: ./gh-pages

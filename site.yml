@@ -1,0 +1,30 @@
+runtime:
+  cache_dir: ./.cache/antora
+
+site:
+  title: Solo.io Build Courseware
+  url: https://kameshsampath.github.io/solo-build-course
+  start_page: solo-build-course::index.adoc
+
+content:
+  sources:
+    - url: .
+      branches: HEAD
+      start_path: documentation
+
+asciidoc:
+  attributes:
+    release-version: master
+    page-pagination: true
+  extensions:
+    - ./lib/tab-block.js
+    - ./lib/remote-include-processor.js
+
+ui:
+  bundle:
+    url: https://github.com/kameshsampath/solo-demo-docs-ui/releases/download/v0.1.5/ui-bundle.zip
+    snapshot: true
+  supplemental_files: ./supplemental-ui
+
+output:
+  dir: ./gh-pages

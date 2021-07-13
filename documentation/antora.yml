@@ -1,0 +1,11 @@
+name: solo-build-course
+title: Writing a Solo.io Coursewares
+version: master
+asciidoc:
+  attributes:
+    source-language: asciidoc@
+    xrefstyle: short@
+nav:
+  - modules/ROOT/nav.adoc
+
+start_page: ROOT:index.adoc

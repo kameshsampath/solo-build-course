@@ -1,0 +1,45 @@
+= Extras
+:navtitle: Extras
+
+include::_attributes.adoc[]
+
+[#using-credentials]
+== Using Credentials
+
+At many cases when running workshops, it might be required that we may need to pass username and password that needs to be updated in the instructions. 
+
+The courseware UI is built in to handle the query parameters passed as *USER* and *PASSWORD* to be automatically replaced in the documentation. 
+
+For the replacement to happen the content documentation should have the following tokens:
+
+- %USER% or $USERNAME
+- %PASSWORD% or $PASSWORD
+
+Hello *%USER%* your password is *%PASSWORD%*
+
+If you have open the link:{site-url}/rhs-build-course/extras.html#using-credentials?USER=foo&PASSWORD=bar[url^], you will see the same page with tokens replaced.
+
+[#vscod-snippets]
+== VSCode Snippets
+
+To aid easier development with tools like https://code.visualstudio.com[Visual Studio Code], the course template repository provides you with a https://github.com/redhat-scholars/courseware-template/blob/master/vscode-asciidoc-extra.json[snippets] that can be added to vscode, to allow quick inserts of commonly used snippets. 
+
+//TODO #1 add video to show how to import and use the snippet
+
+Another handy plugin is https://github.com/asciidoctor/asciidoctor-vscode#how-to-install[asciidoctor-vscode]
+
+[#web-terminal]
+== Web Terminal
+
+In order to conveniently provide all of the CLI tools needed for an
+individual to go through a course, a web-based terminal container image is
+available. This container image is based on
+link:https://tsl0922.github.io/ttyd/[TTYD], and we are maintaining our
+link:https://github.com/redhat-scholars/ttyd-openshift[own derivative].
+
+Each course should provide a set of instructions for how to deploy the
+web-based terminal into the cluster. If you have a specific set of tools that
+is not provided in the base TTYD image that Red Hat Scholars provides, you
+should create a derivative image with your tools and make it available in the
+link:https://quay.io/organization/redhat-scholars[Red Hat Scholars Quay]
+organization with a name that matches your course's ID.

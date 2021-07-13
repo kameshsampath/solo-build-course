@@ -1,0 +1,27 @@
+* xref:setup.adoc[Setup]
+** xref:setup.adoc#prerequisite[Prerequisites]
+
+* xref:overview.adoc[Overview]
+** xref:overview.adoc#create-project[Create a New Course]
+** xref:overview.adoc#file-structure[Course Directory Structure]
+** xref:overview.adoc#navigation[Navigation]
+
+** xref:overview.adoc#partials[Include Partials ]
+
+
+* xref:develop.adoc[Authoring Course]
+** xref:remote_content.adoc[Including Remote Content]
+*** xref:remote_content.adoc#include-raw[Include Raw]
+*** xref:remote_content.adoc#include-stub[Stub and Include]
+*** xref:remote_content.adoc#include-site[Multi Site]
+** xref:develop.adoc#custom-macros[Custom Macros]
+** xref:develop.adoc#live-preview[Live Preview]
+
+* xref:branding.adoc[Branding]
+
+* xref:workflows.adoc[Workflows]
+
+* xref:extras.adoc[Extras]
+** xref:extras.adoc#using-credentials[Using User Credentials]
+** xref:extras.adoc#vscod-snippets[VSCode Snippets]
+** xref:extras.adoc#web-terminal[Web Terminal]
