@@ -1,7 +1,7 @@
 = Remote Content
 :experimental:
 
-The are various ways to include remote content, for content published as part of tutorials of `redhat-scholars` we will follow three strategies:
+The are various ways to include remote content, for content published as part of tutorials will follow three strategies:
 
 - Include Raw Content
 - Stub and Include

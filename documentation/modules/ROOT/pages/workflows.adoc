@@ -1,8 +1,8 @@
 = Workflows 
 
-The demo sites created from the https://github.com/redhat-scholars/courseware-template[Coursware Template^], as https://github.com/features/actions[GitHub Workflow Action^] YAML configured. The Action publishess the github pages automatically when updates are pushed to master branch.
+The demo sites created from the https://github.com/kameshsampath/demo-docs-site-template/[Coursware Template^], as https://github.com/features/actions[GitHub Workflow Action^] YAML configured. The Action publishess the github pages automatically when updates are pushed to master branch.
 
-.link:https://github.com/redhat-scholars/courseware-template/blob/master/.github/workflows/docs.yml[example workflow^]
+.link:https://github.com/kameshsampath/demo-docs-site-template/blob/main/.github/workflows/docs.yml[example workflow^]
 [source,yaml,subs="+quotes"]
 ----
 name: Site Docs
